@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso completo a rastreadores de IA (Generative Engine Optimization - GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://syntropydigital.com/sitemap.xml

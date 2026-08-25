@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="assets/img/icons8-curly-arrow-16.png" />
+    <link rel="apple-touch-icon" href="assets/img/icons8-curly-arrow-16.png" />
+    <title>Digital Syntropy | Transformación Digital de Alto Impacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- SEO: Metaetiquetas & Canónica - Indexación y prevención de contenido duplicado -->
+    <meta name="description"
+        content="Digital Syntropy - Transformamos tu presencia digital en ventas reales. Landing pages, marketing digital y analítica ROI.">
+    <link rel="canonical" href="https://syntropy.digital/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <!-- GEO & SEO: JSON-LD Organization - Define la entidad comercial para IAs (ChatGPT, Perplexity) y Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Digital Syntropy",
+      "url": "https://syntropy.digital",
+      "logo": "https://syntropy.digital/assets/img/digital_syntropy_logo.webp"
+    }
+    </script>
+    <!-- GEO & SEO: JSON-LD FAQPage - Indexa preguntas/respuestas para citación directa en buscadores de IA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Necesito una página web si ya tengo Instagram y Facebook?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Las redes sociales son excelentes canales de comunicación, pero una página web te permite contar con un espacio propio donde organizar y presentar la información de tu negocio de manera profesional. Además, puede facilitar que buscadores y sistemas de IA comprendan qué ofrecés, dónde estás y cómo contactarte."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Landing Page o Sitio Institucional: cuál necesito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende de tu objetivo. Una Landing Page es ideal cuando buscás concentrar tu propuesta y generar consultas o conversiones. Un Sitio Institucional es más adecuado cuando necesitás presentar tu negocio, servicios, trayectoria y propuesta de manera más amplia."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué incluye el desarrollo de mi página web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Incluye diseño personalizado, desarrollo responsive, optimización de rendimiento, estructura SEO, indexación, sitemap, robots.txt, optimización de imágenes y configuración de los elementos necesarios para facilitar el descubrimiento de tu negocio en buscadores y sistemas de IA."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿El dominio y el hosting están incluidos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La contratación y los costos de dominio y hosting dependen de cada proyecto. Te asesoramos para elegir la alternativa más adecuada y transparente para las necesidades de tu negocio."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué es SEO y qué incluye?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO es el conjunto de prácticas que ayudan a que los motores de búsqueda comprendan y encuentren tu sitio. Trabajamos aspectos técnicos, estructura, contenido, indexación, rendimiento y otros factores relevantes para mejorar su visibilidad orgánica."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué es GEO y cómo puede ayudar a mi negocio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GEO (Generative Engine Optimization) busca optimizar la presencia digital y el contenido de tu negocio para facilitar que los sistemas de búsqueda basados en IA puedan encontrar, interpretar y utilizar información relevante sobre él."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿GEO garantiza que mi negocio aparezca en ChatGPT o Gemini?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Ninguna estrategia seria puede garantizar una posición determinada en una respuesta generada por IA. Nuestro objetivo es optimizar la información y presencia digital de tu negocio para facilitar su descubrimiento y comprensión por estos sistemas."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tarda en verse el resultado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del servicio y de la situación inicial de cada negocio. Una página web puede estar disponible una vez finalizado el desarrollo, mientras que el SEO, GEO y las campañas publicitarias requieren tiempo, medición y optimización para evaluar su evolución."
+        }
+      }]
+    }
+    </script>
+</head>
+
+<body class="selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- Sticky Header (Navbar Negro Sólido Elegante) -->
+    <nav class="fixed w-full top-0 z-50 navbar-dark backdrop-blur-lg shadow-2xl">
+        <div class="flex justify-between items-center px-4 sm:px-8 lg:px-12 py-3 max-w-[1400px] mx-auto">
+            <a href="#inicio" class="flex items-center gap-3 shrink-0" aria-label="Digital Syntropy Inicio">
+                <picture class="h-10 md:h-12 w-auto flex items-center">
+                    <source srcset="assets/img/digital_syntropy_logo.webp" type="image/webp">
+                    <img src="assets/img/digital_syntropy_logo.png" alt="Digital Syntropy Logo"
+                        class="h-10 md:h-12 w-auto object-contain" />
+                </picture>
+                <span class="font-headline-md text-xl md:text-2xl font-bold text-white whitespace-nowrap">
+                    Digital <span class="text-secondary-container">Syntropy</span>
+                </span>
+            </a>
+            <div class="hidden md:flex gap-3 lg:gap-6 items-center shrink-0">
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#inicio">Inicio</a>
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#servicios">Servicios</a>
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#precios">Precios</a>
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#nosotros">Nosotros</a>
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#contacto">Contacto</a>
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#faqs">FAQs</a>
+                <a class="bg-primary text-on-primary px-5 py-2.5 rounded-full font-bold text-sm lg:text-base transition-all scale-100 hover:scale-105 active:scale-95 flex items-center gap-2 shadow-lg whitespace-nowrap shrink-0"
+                    href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    Contactar WhatsApp
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Abrir menú"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <span id="mobile-menu-icon" class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu"
+            class="hidden md:hidden flex-col bg-[#0d0d12]/95 backdrop-blur-xl border-b border-white/10 px-6 py-5 space-y-4 transition-all duration-300">
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#inicio">Inicio</a>
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#servicios">Servicios</a>
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#precios">Precios</a>
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#nosotros">Nosotros</a>
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#faqs">FAQs</a>
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#contacto">Contacto</a>
+            <a class="bg-primary text-on-primary px-5 py-3 rounded-xl font-bold text-center transition-all flex items-center justify-center gap-2 shadow-lg mt-2"
+                href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
+                target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                Contactar WhatsApp
+            </a>
+        </div>
+    </nav>
+    <!-- Floating Sticky WhatsApp Button -->
+    <a class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 flex items-center justify-center group"
+        href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-200"></span>
+        </span>
+        <img src="assets/img/whatsapp.svg" alt="WhatsApp"
+            class="w-8 h-8 brightness-0 invert transition-transform group-hover:rotate-12" />
+    </a>
+    <main class="pt-24 overflow-hidden">
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[800px] flex items-center px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto"
+            id="inicio">
+            <!-- Ambient Gradient Blur Backgrounds (Difuminado Hero con Paleta de Colores Syntropy) -->
+            <div
+                class="absolute -top-16 -left-20 w-80 h-80 sm:w-[480px] sm:h-[480px] bg-secondary-container/20 rounded-full blur-[100px] sm:blur-[130px] pointer-events-none z-0">
+            </div>
+            <div
+                class="absolute top-1/4 -right-16 w-80 h-80 sm:w-[520px] sm:h-[520px] bg-secondary-container/15 rounded-full blur-[120px] sm:blur-[140px] pointer-events-none z-0">
+            </div>
+            <div
+                class="absolute bottom-4 left-1/3 w-72 h-72 bg-primary/10 rounded-full blur-[110px] pointer-events-none z-0">
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center w-full relative z-10">
+                <div class="z-10">
+
+                    <!-- SEO: H1 Único Jerárquico - Define la temática principal del sitio para algoritmos de búsqueda -->
+                    <h1
+                        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-on-surface mb-stack-md leading-tight">
+                        La <span class="text-secondary-container">evolución</span> es inminente, por eso, nos encargamos
+                        de brindar el orden que tu negocio necesita para <span
+                            class="text-secondary-container">crecer.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-on-surface-variant mb-stack-lg max-w-lg leading-relaxed">
+                        Si estas iniciando tu negocio, diseñamos codo a codo un sistema a medida que te permitirá ser
+                        descubierto, comprendido y contactado por tus clientes potenciales.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-stack-md">
+                        <a class="bg-secondary-container text-white px-8 py-4 rounded-xl font-bold text-center soft-shadow transition-all hover:brightness-110"
+                            href="#precios">
+                            Ver Planes &amp; Precios
+                        </a>
+                        <a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-center transition-all hover:brightness-110 flex items-center justify-center gap-2 shadow-lg"
+                            href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
+                            target="_blank" rel="noopener noreferrer">
+                            <span class="material-symbols-outlined">chat</span>
+                            Consultar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <!-- Concentric ambient gradient aura behind image (matching reference screenshot) -->
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full border border-secondary-container/15 pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-secondary-container/25 pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] rounded-full bg-secondary-container/15 blur-2xl pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute -inset-6 bg-secondary-container/10 blur-[90px] rounded-full pointer-events-none">
+                    </div>
+
+                    <div
+                        class="bg-white/80 backdrop-blur-md p-6 rounded-3xl relative overflow-hidden border border-black/10 soft-shadow transition-transform duration-500 hover:scale-[1.02]">
+                        <img class="rounded-2xl w-full h-auto object-contain relative z-10"
+                            alt="Ilustración de equipo analizando datos y métricas en tiempo real - Syntropy Digital"
+                            src="assets/img/undraw_data-at-work_3tbf.svg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ecosistema 360 -->
+        <section class="w-full bg-white border-y border-black/5 py-section-gap" id="servicios">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="text-center mb-stack-lg">
+                    <!-- SEO: H2 Jerarquía de Servicios - Posiciona palabras clave transaccionales (Google My Business, Ads, SEO) -->
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Servicios</h2>
+                    <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Card 1: Impulsamos tu presencia digital -->
+                    <div
+                        class="bg-[#eaf9fa] p-6 sm:p-8 rounded-3xl group transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-[#cbeff1] flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="font-headline-md text-xl sm:text-2xl font-extrabold text-on-surface text-center mb-2">
+                                Impulsamos tu presencia digital
+                            </h3>
+                            <div class="my-4 flex justify-center items-center h-48 sm:h-56">
+                                <img src="assets/img/Digital transformation-amico.svg"
+                                    alt="Ilustración de transformación digital e impulso de presencia web"
+                                    class="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
+                            </div>
+                        </div>
+                        <div class="mt-2 flex flex-col gap-3">
+                            <p
+                                class="font-body-md text-sm sm:text-base text-on-surface-variant text-center leading-relaxed">
+                                Creamos y optimizamos tu perfil de Google My Business, ejecutamos estrategias de
+                                SEO(Optimización para Motores de Búsqueda)
+                                ,AEO(Optimización para Motores de Búsqueda en Asistentes de Voz), GEO
+                                (Optimizacion para motores de IA Generativa) e investigamos tus palabras clave
+                                utilizando Google Search Console.
+                            </p>
+                            <div class="pt-3 border-t border-secondary-container/20 flex flex-col gap-2">
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-base shrink-0">storefront</span>
+                                    <span>Google My Business &amp; SEO Local</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-base shrink-0">travel_explore</span>
+                                    <span>GEO &amp; Optimización para IAs</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-base shrink-0">manage_search</span>
+                                    <span>Investigación de Palabras Clave</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Desarrollo Web -->
+                    <div
+                        class="bg-[#e8f5fb] p-6 sm:p-8 rounded-3xl group transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-[#bce3f3] flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="font-headline-md text-xl sm:text-2xl font-extrabold text-on-surface text-center mb-2">
+                                Desarrollo Web
+                            </h3>
+                            <div class="my-4 flex justify-center items-center h-48 sm:h-56">
+                                <img src="assets/img/Design team-bro.svg"
+                                    alt="Ilustración de equipo de diseño y desarrollo web profesional"
+                                    class="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
+                            </div>
+                        </div>
+                        <div class="mt-2 flex flex-col gap-3">
+                            <p
+                                class="font-body-md text-sm sm:text-base text-on-surface-variant text-center leading-relaxed">
+                                Diseñamos y construimos tu sitio según los estándares recomendados por Google, con
+                                diseño 100% responsive, gestión de hosting y coherencia de marca.
+                            </p>
+                            <div class="pt-3 border-t border-[#3DADD9]/25 flex flex-col gap-2">
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-[#3DADD9] text-base shrink-0">verified</span>
+                                    <span>Estándares oficiales de Google</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-[#3DADD9] text-base shrink-0">devices</span>
+                                    <span>Diseño Responsive y ultrarrápido</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined text-[#3DADD9] text-base shrink-0">dns</span>
+                                    <span>Administración de Hosting &amp; Dominio</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-[#3DADD9] text-base shrink-0">palette</span>
+                                    <span>Coherencia visual e identidad digital</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Análisis de Rendimiento -->
+                    <div
+                        class="bg-[#e7f5f4] p-6 sm:p-8 rounded-3xl group transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-[#b8e5e2] flex flex-col justify-between">
+                        <div>
+                            <h3
+                                class="font-headline-md text-xl sm:text-2xl font-extrabold text-on-surface text-center mb-2">
+                                Análisis de Rendimiento
+                            </h3>
+                            <div class="my-4 flex justify-center items-center h-48 sm:h-56">
+                                <img src="assets/img/Performance overview-rafiki.svg"
+                                    alt="Ilustración de análisis de rendimiento y métricas en tiempo real"
+                                    class="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
+                            </div>
+                        </div>
+                        <div class="mt-2 flex flex-col gap-3">
+                            <p
+                                class="font-body-md text-sm sm:text-base text-on-surface-variant text-center leading-relaxed">
+                                Medimos el rendimiento continuo de tu sitio web, analizamos el comportamiento de los
+                                usuarios y elaboramos informes periódicos con Google Analytics.
+                            </p>
+                            <div class="pt-3 border-t border-[#3F858C]/25 flex flex-col gap-2">
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-[#3F858C] text-base shrink-0">bar_chart</span>
+                                    <span>Monitoreo continuo con Google Analytics</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-[#3F858C] text-base shrink-0">query_stats</span>
+                                    <span>Informes detallados de tráfico &amp; conversión</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface-variant">
+                                    <span
+                                        class="material-symbols-outlined text-[#3F858C] text-base shrink-0">insights</span>
+                                    <span>Optimización basada en datos reales</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                </div>
+            </div>
+        </section>
+        <!-- Precios & Live ROI -->
+        <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="precios">
+            <div class="text-center mb-stack-lg">
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Precios</h2>
+                <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
+                <p class="font-headline-md text-headline-md text-on-surface-variant mt-3 font-medium">¿Qué necesita tu
+                    negocio?</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <!-- Tarjeta Unificada de Doble Entrada para Presencia -->
+                <div class="bg-white p-stack-lg rounded-3xl border border-black/5 soft-shadow flex flex-col">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-black/10 gap-8 md:gap-0 flex-1">
+                        <!-- Entrada 1: Landing Page -->
+                        <div class="md:pr-8 flex flex-col justify-between pb-8 md:pb-0">
+                            <div>
+                                <div class="flex flex-col items-start gap-2 mb-stack-sm">
+                                    <h3 class="font-headline-md text-headline-md text-on-surface">Landing Page</h3>
+                                    <span
+                                        class="bg-secondary-container/15 text-secondary-container border border-secondary-container/30 px-3.5 py-1 rounded-full font-bold text-body-md whitespace-nowrap shadow-sm">
+                                        $199.999 ARS
+                                    </span>
+                                </div>
+                                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                                    Destinada a emprendedores, pymes y profesionales que buscan su primer espacio
+                                    digital y
+                                    desean impulsar sus propuestas, productos y servicios.
+                                </p>
+                                <a href="#acordeon-servicios-precios" onclick="togglePrecioAccordion('acc-landing')"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-secondary-container hover:underline mb-4 group/link transition-colors">
+                                    <span>¿Qué servicios incluye mi landing page?</span>
+                                    <span
+                                        class="material-symbols-outlined text-base transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                                </a>
+                            </div>
+                            <a href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-full py-4 bg-primary text-on-primary rounded-xl font-bold hover:brightness-110 transition-all shadow-lg mt-2 flex items-center justify-center text-center">Empezá
+                                ahora</a>
+                        </div>
+
+                        <!-- Entrada 2: Sitio Institucional -->
+                        <div class="md:pl-8 pt-8 md:pt-0 flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-col items-start gap-2 mb-stack-sm">
+                                    <h3 class="font-headline-md text-headline-md text-on-surface">Sitio Institucional
+                                    </h3>
+                                    <span
+                                        class="bg-secondary-container/15 text-secondary-container border border-secondary-container/30 px-3.5 py-1 rounded-full font-bold text-body-md whitespace-nowrap shadow-sm">
+                                        $399.999 ARS
+                                    </span>
+                                </div>
+                                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                                    Destinado a empresas, profesionales y negocios establecidos que necesitan
+                                    presentar su
+                                    identidad, servicios y propuestas de valor de manera profesional y generar
+                                    confianza
+                                    antes del contacto.
+                                </p>
+                                <a href="#acordeon-servicios-precios"
+                                    onclick="togglePrecioAccordion('acc-institucional')"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-secondary-container hover:underline mb-4 group/link transition-colors">
+                                    <span>¿Qué servicios incluye mi sitio institucional?</span>
+                                    <span
+                                        class="material-symbols-outlined text-base transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                                </a>
+                            </div>
+                            <a href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-full py-4 bg-primary text-on-primary rounded-xl font-bold hover:brightness-110 transition-all shadow-lg mt-2 flex items-center justify-center text-center">Empezá
+                                ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acordeón de Detalle de Servicios (2 filas) -->
+                <div class="mt-8 flex flex-col gap-4" id="acordeon-servicios-precios">
+                    <!-- Fila 1: Landing Page -->
+                    <details id="acc-landing" name="precios-detalles"
+                        class="group bg-white rounded-2xl p-5 border border-black/5 soft-shadow cursor-pointer marker:content-[''] transition-all duration-300 hover:border-secondary-container/30">
+                        <summary
+                            class="flex justify-between items-center font-bold text-on-surface text-base sm:text-lg list-none">
+                            <span class="flex items-center gap-2">
+                                ¿Qué servicios incluye mi landing page?
+                            </span>
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <div
+                                    class="mt-4 pt-4 border-t border-black/5 flex flex-col gap-3 font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
+                                    <ul class="flex flex-col gap-3 pt-1 text-on-surface">
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Página única de alta velocidad:</strong> Carga instantánea en
+                                                celulares sin distracciones visuales.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Presencia oficial en Google:</strong> Tu negocio verificado en
+                                                Google Maps y alta en Google Mi Negocio con datos exactos de contacto
+                                                .</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Respuestas directas para asistentes de voz:</strong>
+                                                Información clara y ordenada para que Google responda consultas
+                                                rápidas.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Formulario de Recepción de clientes (CRM):</strong> No
+                                                necesitas pagar CRM mensuales.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Botón directo a WhatsApp:</strong> Con mensaje de consulta ya
+                                                redactado para facilitar el primer contacto.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Todo incluido por 1 año:</strong> Dominio (.com o .com.ar),
+                                                alojamiento web seguro y certificado de seguridad.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Fila 2: Sitio Institucional -->
+                    <details id="acc-institucional" name="precios-detalles"
+                        class="group bg-white rounded-2xl p-5 border border-black/5 soft-shadow cursor-pointer marker:content-[''] transition-all duration-300 hover:border-secondary-container/30">
+                        <summary
+                            class="flex justify-between items-center font-bold text-on-surface text-base sm:text-lg list-none">
+                            <span class="flex items-center gap-2">
+
+                                ¿Qué servicios incluye mi sitio institucional?
+                            </span>
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <div
+                                    class="mt-4 pt-4 border-t border-black/5 flex flex-col gap-3 font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
+                                    <ul class="flex flex-col gap-3 pt-1 text-on-surface">
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Estructura multipágina completa:</strong> Páginas individuales
+                                                (Inicio, Nosotros, Servicios por separado, Trabajos/Casos y
+                                                Contacto).</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Múltiples puertas de entrada en Google:</strong> Cada servicio
+                                                se posiciona de forma independiente para atraer clientes de distintos
+                                                rubros.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Preparado para Inteligencia Artificial:</strong> Código
+                                                semántico configurado para que asistentes como ChatGPT y Perplexity
+                                                citen y recomienden tu empresa.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Validación y confianza:</strong> Módulo de opiniones de
+                                                clientes reales, tablas de datos claros y sección de preguntas
+                                                frecuentes.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Panel de medición comercial:</strong> Conexión con Google
+                                                Analytics para saber de dónde llegan tus visitas y cuántas piden
+                                                presupuesto.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                            <span><strong>Ecosistema corporativo por 1 año:</strong> Dominio profesional
+                                                y hosting con certificado de seguridad bonificados por 1 año.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- Confianza Banner -->
+        <section class="bg-surface-container-low py-stack-lg overflow-hidden whitespace-nowrap border-y border-black/5">
+            <div class="flex items-center gap-stack-lg animate-marquee px-margin-desktop">
+                <div class="flex items-center gap-4 px-12">
+                    <span class="text-xl md:text-2xl text-on-surface-variant" style="font-family: 'Cinzel', serif;">
+                        Cualquier <span class="text-secondary-container font-bold">Tecnología</span> suficientemente
+                        avanzada es indistinguible de la <span class="text-secondary-container font-bold">Magia</span>
+                    </span>
+                    <span class="material-symbols-outlined text-secondary-container text-opacity-50">auto_awesome</span>
+                </div>
+
+                <div class="flex items-center gap-4 px-12">
+                    <span class="text-xl md:text-2xl text-on-surface-variant" style="font-family: 'Cinzel', serif;">
+                        Cualquier <span class="text-secondary-container font-bold">Tecnología</span> suficientemente
+                        avanzada es indistinguible de la <span class="text-secondary-container font-bold">Magia</span>
+                    </span>
+                    <span class="material-symbols-outlined text-secondary-container text-opacity-50">auto_awesome</span>
+                </div>
+                <div class="flex items-center gap-4 px-12">
+                    <span class="text-xl md:text-2xl text-on-surface-variant" style="font-family: 'Cinzel', serif;">
+                        Cualquier <span class="text-secondary-container font-bold">Tecnología</span> suficientemente
+                        avanzada es indistinguible de la <span class="text-secondary-container font-bold">Magia</span>
+                    </span>
+                    <span class="material-symbols-outlined text-secondary-container text-opacity-50">auto_awesome</span>
+                </div>
+                <!-- Duplicate for loop -->
+                <div class="flex items-center gap-4 px-12">
+                    <span class="text-xl md:text-2xl text-on-surface-variant" style="font-family: 'Cinzel', serif;">
+                        Cualquier <span class="text-secondary-container font-bold">Tecnología</span> suficientemente
+                        avanzada es indistinguible de la <span class="text-secondary-container font-bold">Magia</span>
+                    </span>
+                    <span class="material-symbols-outlined text-secondary-container text-opacity-50">auto_awesome</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros & Proceso -->
+        <section class="w-full bg-white border-y border-black/5 py-section-gap" id="nosotros">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div
+                    class="bg-surface-container-low p-8 md:p-12 rounded-3xl border border-black/5 soft-shadow max-w-5xl mx-auto mb-section-gap cyan-border-top-light">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+                        <!-- 50% Izquierda: Imagen destacada (3/4 de la altura del bloque de texto) -->
+                        <div class="flex items-center justify-center p-2 min-w-0">
+                            <img src="assets/img/Team goals-rafiki.svg"
+                                alt="Ilustración de equipo de trabajo alcanzando objetivos y metas"
+                                class="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] max-h-[280px] md:max-h-[330px] h-auto object-contain mx-auto" />
+                        </div>
+
+                        <!-- 50% Derecha: La razón de nuestra existencia (Texto con margen interno de protección) -->
+                        <div class="min-w-0 w-full px-2 md:px-6">
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm text-center">¿Por
+                                qué elegirnos?</h2>
+                            <div class="h-1.5 w-20 bg-secondary-container rounded-full mb-stack-lg mx-auto"></div>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-4">
+                                Vivimos en un entorno en constante evolución. Nuevas tecnologías, nuevas formas de
+                                buscar,
+                                comunicarse y relacionarse con los negocios aparecen continuamente. Adaptarse a ello es
+                                considerado un complejo desafío.
+                            </p>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                En <strong class="text-on-surface font-bold">Digital Syntropy</strong>, nuestro objetivo
+                                es
+                                aportar orden a esa complejidad: Construir una presencia digital coherente, conectar las
+                                distintas herramientas y tecnologías y transformarlas en un sistema que ayude a tu
+                                negocio a ser
+                                encontrado, generar oportunidades y evolucionar con el entorno.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proceso (Timeline Acróstico Vertical de 4 Pasos) -->
+                <div class="mt-section-gap pt-stack-lg" id="proceso">
+                    <!-- Section Header -->
+                    <div class="text-center mb-stack-lg">
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">
+                            De la idea a la producción en 4 pasos
+                        </h2>
+                        <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-3 max-w-2xl mx-auto">
+                            Un proceso estructurado para construir tu presencia digital con velocidad, precisión técnica
+                            y cero fricción.
+                        </p>
+                    </div>
+
+                    <!-- Lista de Tarjetas del Proceso con Números Internos -->
+                    <div class="max-w-3xl mx-auto px-4 py-stack-lg flex flex-col gap-8">
+                        <!-- STEP 1 -->
+                        <div
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            <div class="flex items-center gap-4 mb-stack-sm">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-white border-2 border-secondary-container text-secondary-container font-extrabold text-base flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-secondary-container group-hover:text-white group-hover:scale-110">
+                                    1
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Diagnóstico & Enfoque</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Analizamos tu negocio, competencia y presencia digital para definir la arquitectura web
+                                exacta que necesitás.
+                            </p>
+                        </div>
+
+                        <!-- STEP 2 -->
+                        <div
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            <div class="flex items-center gap-4 mb-stack-sm">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-white border-2 border-secondary-container text-secondary-container font-extrabold text-base flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-secondary-container group-hover:text-white group-hover:scale-110">
+                                    2
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Diseño & Estructura</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Maquetamos un prototipo visual interactivo de alta fidelidad adaptado a tu identidad de
+                                marca y objetivos.
+                            </p>
+                        </div>
+
+                        <!-- STEP 3 -->
+                        <div
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            <div class="flex items-center gap-4 mb-stack-sm">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-white border-2 border-secondary-container text-secondary-container font-extrabold text-base flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-secondary-container group-hover:text-white group-hover:scale-110">
+                                    3
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Ingeniería & Feedback</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Construimos la web siguiendo las prácticas recomendadas por google y
+                                aplicamos tus revisiones puntuales antes
+                                del despliegue.
+                            </p>
+                        </div>
+
+                        <!-- STEP 4 -->
+                        <div
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            <div class="flex items-center gap-4 mb-stack-sm">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary text-white border-2 border-primary font-extrabold text-base flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                                    4
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Lanzamiento & GEO/SEO</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Publicacion y estructuracion optimizada para Google y motores de Inteligencia
+                                Artificial.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section -->
+        <!-- Contact Section (formulario) -->
+        <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contacto">
+            <div class="text-center mb-stack-lg">
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">¡Contanos sobre tu negocio!
+                </h2>
+                <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
+            </div>
+            <div class="max-w-5xl mx-auto">
+                <div class="bg-white p-8 md:p-12 rounded-3xl border border-black/5 soft-shadow cyan-border-top-light">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+                        <!-- 50% Izquierda: Imagen compacta -->
+                        <div class="flex items-center justify-center p-4 min-w-0">
+                            <img src="assets/img/undraw_chatting_29rn.svg" alt="Ilustración de consulta y contacto"
+                                class="w-full max-w-[180px] md:max-w-[210px] max-h-48 h-auto object-contain mx-auto" />
+                        </div>
+
+                        <!-- 50% Derecha: Formulario de contacto (con margen interno de protección) -->
+                        <div class="min-w-0 w-full px-2 md:px-6">
+                            <!-- Formulario con ID para el script -->
+                            <form id="contact-form" class="space-y-5 md:space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                                    <div>
+                                        <label for="nombre"
+                                            class="block font-label-sm text-label-sm mb-2 text-on-surface-variant">Nombre
+                                            Completo</label>
+                                        <input id="nombre" name="nombre" required autocomplete="name"
+                                            class="w-full bg-surface-container-lowest border border-black/10 rounded-xl px-4 py-3.5 focus:outline-none focus:border-secondary-container transition-colors text-on-surface"
+                                            placeholder="Ej: Juan Pérez" type="text" />
+                                    </div>
+                                    <div>
+                                        <label for="email"
+                                            class="block font-label-sm text-label-sm mb-2 text-on-surface-variant">Email</label>
+                                        <input id="email" name="email" required autocomplete="email"
+                                            class="w-full bg-surface-container-lowest border border-black/10 rounded-xl px-4 py-3.5 focus:outline-none focus:border-secondary-container transition-colors text-on-surface"
+                                            placeholder="juan@empresa.com" type="email" />
+                                    </div>
+                                </div>
+
+                                <div class="pt-1">
+                                    <label for="telefono"
+                                        class="block font-label-sm text-label-sm mb-2 text-on-surface-variant">Teléfono
+                                        (WhatsApp)</label>
+                                    <input id="telefono" name="telefono" required autocomplete="tel"
+                                        class="w-full bg-surface-container-lowest border border-black/10 rounded-xl px-4 py-3.5 focus:outline-none focus:border-secondary-container transition-colors text-on-surface"
+                                        placeholder="+54 9..." type="tel" />
+                                </div>
+
+                                <!-- Honeypot Antispam (Oculto para humanos, trampa para bots) -->
+                                <div class="hidden" aria-hidden="true">
+                                    <label for="website" class="sr-only">Sitio web</label>
+                                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+                                </div>
+
+                                <div class="pt-1">
+                                    <label for="mensaje"
+                                        class="block font-label-sm text-label-sm mb-2 text-on-surface-variant">Cuéntanos
+                                        sobre tu proyecto</label>
+                                    <textarea id="mensaje" name="mensaje" required
+                                        class="w-full bg-surface-container-lowest border border-black/10 rounded-xl px-4 py-3.5 focus:outline-none focus:border-secondary-container transition-colors text-on-surface resize-none"
+                                        placeholder="¿Qué vendes y cuál es tu objetivo?" rows="4"></textarea>
+                                </div>
+
+                                <!-- Botón con ID y contenedor de estados -->
+                                <button id="submit-btn" aria-busy="false"
+                                    class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold shadow-lg hover:brightness-110 active:scale-[0.99] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                                    type="submit">
+                                    <span id="btn-text">Enviar Solicitud</span>
+                                    <span id="btn-icon" class="material-symbols-outlined" aria-hidden="true">send</span>
+                                </button>
+
+                                <!-- Mensaje de estado dinámico -->
+                                <p id="form-status" class="text-center text-sm font-medium hidden mt-2"
+                                    aria-live="polite"></p>
+
+                                <div class="flex items-center justify-center gap-2 mt-4 text-on-surface-variant">
+                                    <span class="material-symbols-outlined text-primary text-sm"
+                                        style="font-variation-settings: 'FILL' 1;" aria-hidden="true">verified</span>
+                                    <span class="font-label-sm text-label-sm">Tus datos están protegidos con SSL</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="w-full bg-white border-y border-black/5 py-section-gap" id="faqs">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="text-center mb-stack-lg">
+                    <!-- GEO & SEO: Patrón First-Sentence Answer - Respuestas de 20-30 palabras listas para citas directas de LLMs -->
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Preguntas Frecuentes</h2>
+                    <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-3">Todo lo que necesitas saber antes
+                        de empezar.</p>
+                </div>
+                <div class="max-w-3xl mx-auto flex flex-col gap-stack-sm">
+                    <!-- FAQ 1 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Necesito una página web si ya tengo Instagram y Facebook?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    Sí. Las redes sociales son excelentes canales de comunicación, pero una página web
+                                    te
+                                    permite contar con un espacio propio donde organizar y presentar la información de
+                                    tu
+                                    negocio de manera profesional. Además, puede facilitar que buscadores y sistemas de
+                                    IA
+                                    comprendan qué ofrecés, dónde estás y cómo contactarte.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Landing Page o Sitio Institucional: cuál necesito?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    Depende de tu objetivo. Una Landing Page es ideal cuando buscás concentrar tu
+                                    propuesta y
+                                    generar consultas o conversiones. Un Sitio Institucional es más adecuado cuando
+                                    necesitás
+                                    presentar tu negocio, servicios, trayectoria y propuesta de manera más amplia.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                    <!-- FAQ 3 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿En cuánto tiempo puedo tener lista mi pagina web?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    Los plazos varían según la
+                                    complejidad del ecosistema y la entrega de tu contenido:
+
+                                    Ecosistema de Captación (Landing Page): 5 a 7 días hábiles.
+
+                                    Plataforma Institucional Completa: 7 a 10 días hábiles.
+
+                                    Una vez confirmado el inicio del proyecto y recibido el material gráfico de tu
+                                    marca,
+                                    arrancamos con el desarrollo en el día.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                    <!-- FAQ 4 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Debo entregar todo el contenido antes de contratar?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    No es obligatorio para iniciar el proyecto, pero sí lo necesitamos para avanzar a la
+                                    fase de desarrollo. Una vez coordinado el trabajo, te pediremos: tu logo (en alta
+                                    resolución), los textos descriptivos de tus servicios, fotografías y tus colores de
+                                    marca. Si no tenés todo definido, nuestro equipo te asiste en la organización del
+                                    contenido para que tu web tenga el máximo impacto comercial.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                    <!-- FAQ 5 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Cómo funcionan las correcciones y cambios?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    Dentro de los primeros 7 días hábiles te
+                                    presentamos una pre-entrega funcional. Luego, disponés de dos rondas de revisión
+                                    (vía documento o reunión virtual) para afinar detalles visuales y de contenido. Una
+                                    vez aprobados los ajustes, realizamos el lanzamiento final. Cualquier rediseño
+                                    profundo o agregado de secciones fuera de los 30 días iniciales del proyecto se
+                                    presupuesta de forma independiente.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                    <!-- FAQ 6 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿El dominio y el hosting están incluidos?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    La contratación y los costos de dominio y hosting dependen de cada proyecto. Te
+                                    asesoramos
+                                    para elegir la alternativa más adecuada y transparente para las necesidades de tu
+                                    negocio.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 7 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Qué es SEO y qué incluye?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    SEO es el conjunto de prácticas que ayudan a que los motores de búsqueda comprendan
+                                    y
+                                    encuentren tu sitio. Trabajamos aspectos técnicos, estructura, contenido,
+                                    indexación,
+                                    rendimiento y otros factores relevantes para mejorar su visibilidad orgánica.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 8 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Qué es GEO y cómo puede ayudar a mi negocio?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    GEO (Generative Engine Optimization) busca optimizar la presencia digital y el
+                                    contenido de
+                                    tu negocio para facilitar que los sistemas de búsqueda basados en IA puedan
+                                    encontrar,
+                                    interpretar y utilizar información relevante sobre él.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 9 -->
+                    <details name="faq"
+                        class="group bg-surface-container-high rounded-xl p-stack-md cursor-pointer marker:content-[''] transition-all duration-300 hover:bg-surface-container-highest">
+                        <summary class="flex justify-between items-center font-bold text-on-surface list-none">
+                            ¿Qué es AEO?
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary-container">expand_more</span>
+                        </summary>
+                        <div
+                            class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="mt-stack-sm font-body-md text-on-surface-variant pt-2 leading-relaxed">
+                                    La Optimización para Motores de Búsqueda en Asistentes de Voz (AEO) es una
+                                    estrategia de posicionamiento digital que adapta tu contenido y presencia online
+                                    para
+                                    que sea óptimo para ser encontrado, interpretado y utilizado por los asistentes de
+                                    voz
+                                    basados en IA, como Alexa, Google Assistant o Siri.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SEO & GEO: Conversión Estática Rastreable - CTA accesible en DOM estático sin JavaScript dinámico -->
+
+    </main>
+    <!-- Footer (Negro Sólido Elegante con Alto Contraste) -->
+    <footer class="navbar-dark py-stack-lg border-t border-white/10">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-stack-lg">
+            <div class="text-center md:text-left">
+                <div class="mb-4 flex items-center justify-center md:justify-start gap-3">
+                    <picture class="h-12 md:h-14 w-auto flex items-center">
+                        <source srcset="assets/img/digital_syntropy_logo.webp" type="image/webp">
+                        <img src="assets/img/digital_syntropy_logo.png" alt="Digital Syntropy Logo"
+                            class="h-12 md:h-14 w-auto object-contain" />
+                    </picture>
+                    <span class="font-headline-md text-xl md:text-2xl font-bold text-white">
+                        Digital <span class="text-secondary-container">Syntropy</span>
+                    </span>
+                </div>
+                <p class="font-body-md text-body-md text-white">© 2026 Digital Syntropy. Todos los derechos
+                    reservados.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-stack-lg">
+                <a class="font-body-md text-body-md text-white hover:text-secondary-container transition-all"
+                    href="#servicios">Servicios</a>
+                <a class="font-body-md text-body-md text-white hover:text-secondary-container transition-all"
+                    href="#nosotros">Nosotros</a>
+                <a class="font-body-md text-body-md text-white hover:text-secondary-container transition-all"
+                    href="#faqs">FAQs</a>
+                <a class="font-body-md text-body-md text-white hover:text-secondary-container transition-all"
+                    href="#contacto">Contacto</a>
+            </div>
+            <div class="flex gap-4 items-center">
+                <a class="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 hover:border-white/30 transition-all shadow-sm group p-2 overflow-hidden"
+                    href="https://www.instagram.com/dsyntropy/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <img src="assets/img/instagram_logo.png" alt="Instagram"
+                        class="w-full h-full object-contain group-hover:scale-110 transition-transform" />
+                </a>
+                <a class="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center hover:bg-white/20 hover:border-white/30 transition-all shadow-sm group p-2 overflow-hidden"
+                    href="https://www.facebook.com/profile.php?id=61593953572430" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="assets/img/facebook-logo.png" alt="Facebook"
+                        class="w-full h-full object-contain group-hover:scale-110 transition-transform" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                if (mobileMenuIcon) {
+                    mobileMenuIcon.textContent = isExpanded ? 'menu' : 'close';
+                }
+            });
+
+            // Close mobile menu when clicking a link inside it
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'menu';
+                    }
+                });
+            });
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Dynamic ScrollSpy
+        const navLinks = document.querySelectorAll('div.hidden.md\\:flex a[href^="#"]');
+        const sections = document.querySelectorAll('section[id]');
+        const activeClasses = ['text-secondary-container', 'font-semibold', 'border-b-2', 'border-secondary-container', 'pb-1'];
+        const inactiveClasses = ['text-white'];
+
+        const scrollSpyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add(...activeClasses);
+                            link.classList.remove(...inactiveClasses);
+                        } else {
+                            link.classList.remove(...activeClasses);
+                            link.classList.add(...inactiveClasses);
+                        }
+                    });
+                }
+            });
+        }, {
+            rootMargin: '-20% 0px -55% 0px',
+            threshold: 0
+        });
+
+        sections.forEach(section => scrollSpyObserver.observe(section));
+
+        // Fade-in Animation Observer
+        const observerOptions = { threshold: 0.1 };
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            fadeObserver.observe(section);
+        });
+
+        // Acordeón Exclusivo para FAQs (cierra automáticamente las demás al abrir una)
+        const faqDetails = document.querySelectorAll('details[name="faq"]');
+        faqDetails.forEach(targetDetail => {
+            targetDetail.addEventListener('click', function () {
+                if (!this.hasAttribute('open')) {
+                    faqDetails.forEach(detail => {
+                        if (detail !== this) {
+                            detail.removeAttribute('open');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Acordeón para Detalle de Precios (Landing vs Institucional)
+        function togglePrecioAccordion(id) {
+            const target = document.getElementById(id);
+            if (target) {
+                document.querySelectorAll('details[name="precios-detalles"]').forEach(detail => {
+                    if (detail !== target) detail.removeAttribute('open');
+                });
+                target.setAttribute('open', 'true');
+            }
+        }
+    </script>
+    <script src="assets/js/form-handler.js" defer></script>
+</body>
+
+</html>
