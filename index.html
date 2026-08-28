@@ -21,78 +21,127 @@
         content="Digital Syntropy - Transformamos tu presencia digital en ventas reales. Landing pages, marketing digital y analítica ROI.">
     <link rel="canonical" href="https://syntropy.digital/">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <!-- GEO & SEO: JSON-LD Organization - Define la entidad comercial para IAs (ChatGPT, Perplexity) y Google -->
+    <!-- GEO & SEO: JSON-LD Unified Graph - LocalBusiness, WebSite & FAQPage Schema para buscadores tradicionales e IAs (ChatGPT, Perplexity, Gemini) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Digital Syntropy",
-      "url": "https://syntropy.digital",
-      "logo": "https://syntropy.digital/assets/img/digital_syntropy_logo.webp"
-    }
-    </script>
-    <!-- GEO & SEO: JSON-LD FAQPage - Indexa preguntas/respuestas para citación directa en buscadores de IA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "¿Necesito una página web si ya tengo Instagram y Facebook?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Las redes sociales son excelentes canales de comunicación, pero una página web te permite contar con un espacio propio donde organizar y presentar la información de tu negocio de manera profesional. Además, puede facilitar que buscadores y sistemas de IA comprendan qué ofrecés, dónde estás y cómo contactarte."
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://syntropy.digital/#organization",
+          "name": "Digital Syntropy",
+          "url": "https://syntropy.digital",
+          "logo": "https://syntropy.digital/assets/img/digital_syntropy_logo.webp",
+          "image": "https://syntropy.digital/assets/img/digital_syntropy_logo.webp",
+          "description": "Agencia de desarrollo web, landing pages y optimización SEO/GEO en San Miguel de Tucumán.",
+          "telephone": "+5493815125571",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Miguel de Tucumán",
+            "addressRegion": "Tucumán",
+            "addressCountry": "AR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -26.82414,
+            "longitude": -65.2226
+          },
+          "areaServed": [
+            { "@type": "City", "name": "San Miguel de Tucumán" },
+            { "@type": "City", "name": "Yerba Buena" },
+            { "@type": "City", "name": "Tafí Viejo" },
+            { "@type": "Country", "name": "Argentina" }
+          ],
+          "knowsAbout": [
+            "Desarrollo Web",
+            "Landing Pages",
+            "SEO (Search Engine Optimization)",
+            "GEO (Generative Engine Optimization)",
+            "Marketing Digital"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://syntropy.digital/#website",
+          "url": "https://syntropy.digital",
+          "name": "Digital Syntropy",
+          "publisher": {
+            "@id": "https://syntropy.digital/#organization"
+          },
+          "inLanguage": "es"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://syntropy.digital/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Necesito una página web si ya tengo Instagram y Facebook?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Las redes sociales son excelentes canales de comunicación, pero una página web te permite contar con un espacio propio donde organizar y presentar la información de tu negocio de manera profesional. Además, facilita que buscadores y sistemas de IA comprendan qué ofrecés, dónde estás y cómo contactarte."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Landing Page o Sitio Institucional: cuál necesito?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende de tu objetivo. Una Landing Page es ideal cuando buscás concentrar tu propuesta y generar consultas o conversiones. Un Sitio Institucional es más adecuado cuando necesitás presentar tu negocio, servicios, trayectoria y propuesta de manera más amplia."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué incluye el desarrollo de mi página web?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Incluye diseño personalizado, desarrollo responsive, optimización de rendimiento, estructura SEO, indexación, sitemap, robots.txt, optimización de imágenes y configuración de los elementos necesarios para facilitar el descubrimiento de tu negocio en buscadores y sistemas de IA."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿El dominio y el hosting están incluidos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La contratación y los costos de dominio y hosting dependen de cada proyecto. Te asesoramos para elegir la alternativa más adecuada y transparente para las necesidades de tu negocio."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué es SEO y qué incluye?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO es el conjunto de prácticas que ayudan a que los motores de búsqueda comprendan y encuentren tu sitio. Trabajamos aspectos técnicos, estructura, contenido, indexación, rendimiento y otros factores relevantes para mejorar su visibilidad orgánica."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué es GEO y cómo puede ayudar a mi negocio?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GEO (Generative Engine Optimization) busca optimizar la presencia digital y el contenido de tu negocio para facilitar que los sistemas de búsqueda basados en IA (como ChatGPT, Gemini o Perplexity) puedan encontrar, interpretar y utilizar información relevante sobre él."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿GEO garantiza que mi negocio aparezca en ChatGPT o Gemini?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Ninguna estrategia seria puede garantizar una posición determinada en una respuesta generada por IA. Nuestro objetivo es optimizar la información y presencia digital de tu negocio para facilitar su descubrimiento y comprensión por estos sistemas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo tarda en verse el resultado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende del servicio y de la situación inicial de cada negocio. Una página web puede estar disponible una vez finalizado el desarrollo, mientras que el SEO, GEO y las campañas publicitarias requieren tiempo, medición y optimización para evaluar su evolución."
+              }
+            }
+          ]
         }
-      }, {
-        "@type": "Question",
-        "name": "¿Landing Page o Sitio Institucional: cuál necesito?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Depende de tu objetivo. Una Landing Page es ideal cuando buscás concentrar tu propuesta y generar consultas o conversiones. Un Sitio Institucional es más adecuado cuando necesitás presentar tu negocio, servicios, trayectoria y propuesta de manera más amplia."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿Qué incluye el desarrollo de mi página web?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Incluye diseño personalizado, desarrollo responsive, optimización de rendimiento, estructura SEO, indexación, sitemap, robots.txt, optimización de imágenes y configuración de los elementos necesarios para facilitar el descubrimiento de tu negocio en buscadores y sistemas de IA."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿El dominio y el hosting están incluidos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La contratación y los costos de dominio y hosting dependen de cada proyecto. Te asesoramos para elegir la alternativa más adecuada y transparente para las necesidades de tu negocio."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿Qué es SEO y qué incluye?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SEO es el conjunto de prácticas que ayudan a que los motores de búsqueda comprendan y encuentren tu sitio. Trabajamos aspectos técnicos, estructura, contenido, indexación, rendimiento y otros factores relevantes para mejorar su visibilidad orgánica."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿Qué es GEO y cómo puede ayudar a mi negocio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "GEO (Generative Engine Optimization) busca optimizar la presencia digital y el contenido de tu negocio para facilitar que los sistemas de búsqueda basados en IA puedan encontrar, interpretar y utilizar información relevante sobre él."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿GEO garantiza que mi negocio aparezca en ChatGPT o Gemini?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Ninguna estrategia seria puede garantizar una posición determinada en una respuesta generada por IA. Nuestro objetivo es optimizar la información y presencia digital de tu negocio para facilitar su descubrimiento y comprensión por estos sistemas."
-        }
-      }, {
-        "@type": "Question",
-        "name": "¿Cuánto tiempo tarda en verse el resultado?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Depende del servicio y de la situación inicial de cada negocio. Una página web puede estar disponible una vez finalizado el desarrollo, mientras que el SEO, GEO y las campañas publicitarias requieren tiempo, medición y optimización para evaluar su evolución."
-        }
-      }]
+      ]
     }
     </script>
 </head>
@@ -174,7 +223,7 @@
     <main class="pt-24 overflow-hidden">
         <!-- Hero Section -->
         <section
-            class="relative min-h-[800px] flex items-center px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto"
+            class="relative min-h-[800px] flex items-center px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto reveal-slide-left"
             id="inicio">
             <!-- Ambient Gradient Blur Backgrounds (Difuminado Hero con Paleta de Colores Syntropy) -->
             <div
@@ -190,17 +239,19 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center w-full relative z-10">
                 <div class="z-10">
 
-                    <!-- SEO: H1 Único Jerárquico - Define la temática principal del sitio para algoritmos de búsqueda -->
+                    <!-- SEO & AEO: H1 Transaccional & Entidad Local Principal -->
                     <h1
                         class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-on-surface mb-stack-md leading-tight">
-                        La <span class="text-secondary-container">evolución</span> es inminente, por eso, nos encargamos
-                        de brindar el orden que tu negocio necesita para <span
-                            class="text-secondary-container">crecer.</span>
+                        Desarrollo Web y Posicionamiento <span class="text-secondary-container">SEO &amp; GEO</span> en
+                        Argentina
                     </h1>
-                    <p class="text-base sm:text-lg text-on-surface-variant mb-stack-lg max-w-lg leading-relaxed">
-                        Si estas iniciando tu negocio, diseñamos codo a codo un sistema a medida que te permitirá ser
-                        descubierto, comprendido y contactado por tus clientes potenciales.
-                    </p>
+                    <!-- AEO Direct Entity Extraction Sentence -->
+                    <blockquote
+                        class="text-base sm:text-lg text-on-surface-variant mb-stack-lg max-w-lg leading-relaxed border-l-4 border-secondary-container pl-4 my-4 font-normal not-italic">
+                        Digital Syntropy es una agencia de desarrollo web,
+                        especializada en el diseño de landing pages y sitios institucionales de alta velocidad
+                        optimizados para buscadores y motores de Inteligencia Artificial.
+                    </blockquote>
                     <div class="flex flex-col sm:flex-row gap-stack-md">
                         <a class="bg-secondary-container text-white px-8 py-4 rounded-xl font-bold text-center soft-shadow transition-all hover:brightness-110"
                             href="#precios">
@@ -239,11 +290,12 @@
             </div>
         </section>
         <!-- Ecosistema 360 -->
-        <section class="w-full bg-white border-y border-black/5 py-section-gap" id="servicios">
+        <section class="w-full bg-white border-y border-black/5 py-section-gap reveal-slide-left" id="servicios">
             <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
                 <div class="text-center mb-stack-lg">
-                    <!-- SEO: H2 Jerarquía de Servicios - Posiciona palabras clave transaccionales (Google My Business, Ads, SEO) -->
-                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Servicios</h2>
+                    <!-- SEO: H2 Jerarquía de Servicios - Posiciona palabras clave transaccionales -->
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Servicios de Desarrollo
+                        Web &amp; Posicionamiento</h2>
                     <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
@@ -267,7 +319,7 @@
                                 Creamos y optimizamos tu perfil de Google My Business, ejecutamos estrategias de
                                 SEO(Optimización para Motores de Búsqueda)
                                 ,AEO(Optimización para Motores de Búsqueda en Asistentes de Voz), GEO
-                                (Optimizacion para motores de IA Generativa) e investigamos tus palabras clave
+                                (Optimizacion para motores de IA Generativa) e investigamos palabras clave
                                 utilizando Google Search Console.
                             </p>
                             <div class="pt-3 border-t border-secondary-container/20 flex flex-col gap-2">
@@ -376,9 +428,12 @@
             </div>
         </section>
         <!-- Precios & Live ROI -->
-        <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="precios">
+        <section
+            class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal-slide-left"
+            id="precios">
             <div class="text-center mb-stack-lg">
-                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Precios</h2>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Planes y Precios de Páginas
+                    Web</h2>
                 <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
                 <p class="font-headline-md text-headline-md text-on-surface-variant mt-3 font-medium">¿Qué necesita tu
                     negocio?</p>
@@ -581,7 +636,8 @@
             </div>
         </section>
         <!-- Confianza Banner -->
-        <section class="bg-surface-container-low py-stack-lg overflow-hidden whitespace-nowrap border-y border-black/5">
+        <section
+            class="bg-surface-container-low py-stack-lg overflow-hidden whitespace-nowrap border-y border-black/5 reveal-slide-left">
             <div class="flex items-center gap-stack-lg animate-marquee px-margin-desktop">
                 <div class="flex items-center gap-4 px-12">
                     <span class="text-xl md:text-2xl text-on-surface-variant" style="font-family: 'Cinzel', serif;">
@@ -617,7 +673,7 @@
         </section>
 
         <!-- Nosotros & Proceso -->
-        <section class="w-full bg-white border-y border-black/5 py-section-gap" id="nosotros">
+        <section class="w-full bg-white border-y border-black/5 py-section-gap reveal-slide-left" id="nosotros">
             <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
                 <div
                     class="bg-surface-container-low p-8 md:p-12 rounded-3xl border border-black/5 soft-shadow max-w-5xl mx-auto mb-section-gap cyan-border-top-light">
@@ -632,7 +688,7 @@
                         <!-- 50% Derecha: La razón de nuestra existencia (Texto con margen interno de protección) -->
                         <div class="min-w-0 w-full px-2 md:px-6">
                             <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm text-center">¿Por
-                                qué elegirnos?</h2>
+                                qué elegir a Digital Syntropy?</h2>
                             <div class="h-1.5 w-20 bg-secondary-container rounded-full mb-stack-lg mx-auto"></div>
                             <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-4">
                                 Vivimos en un entorno en constante evolución. Nuevas tecnologías, nuevas formas de
@@ -657,7 +713,7 @@
                     <!-- Section Header -->
                     <div class="text-center mb-stack-lg">
                         <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">
-                            De la idea a la producción en 4 pasos
+                            Proceso de Desarrollo Web en 4 Pasos
                         </h2>
                         <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
                         <p class="font-body-md text-body-md text-on-surface-variant mt-3 max-w-2xl mx-auto">
@@ -670,7 +726,7 @@
                     <div class="max-w-3xl mx-auto px-4 py-stack-lg flex flex-col gap-8">
                         <!-- STEP 1 -->
                         <div
-                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group reveal-slide-left reveal-delay-100">
                             <div class="flex items-center gap-4 mb-stack-sm">
                                 <div
                                     class="w-10 h-10 rounded-full bg-white border-2 border-secondary-container text-secondary-container font-extrabold text-base flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-secondary-container group-hover:text-white group-hover:scale-110">
@@ -686,7 +742,7 @@
 
                         <!-- STEP 2 -->
                         <div
-                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group reveal-slide-left reveal-delay-200">
                             <div class="flex items-center gap-4 mb-stack-sm">
                                 <div
                                     class="w-10 h-10 rounded-full bg-white border-2 border-secondary-container text-secondary-container font-extrabold text-base flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-secondary-container group-hover:text-white group-hover:scale-110">
@@ -702,7 +758,7 @@
 
                         <!-- STEP 3 -->
                         <div
-                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group reveal-slide-left reveal-delay-300">
                             <div class="flex items-center gap-4 mb-stack-sm">
                                 <div
                                     class="w-10 h-10 rounded-full bg-white border-2 border-secondary-container text-secondary-container font-extrabold text-base flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-secondary-container group-hover:text-white group-hover:scale-110">
@@ -719,7 +775,7 @@
 
                         <!-- STEP 4 -->
                         <div
-                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group">
+                            class="bg-white p-6 md:p-8 rounded-2xl border border-black/5 transition-all hover:-translate-y-1 group reveal-slide-left reveal-delay-400">
                             <div class="flex items-center gap-4 mb-stack-sm">
                                 <div
                                     class="w-10 h-10 rounded-full bg-primary text-white border-2 border-primary font-extrabold text-base flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
@@ -738,9 +794,12 @@
         </section>
         <!-- Testimonial Section -->
         <!-- Contact Section (formulario) -->
-        <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contacto">
+        <section
+            class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal-slide-left"
+            id="contacto">
             <div class="text-center mb-stack-lg">
-                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">¡Contanos sobre tu negocio!
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Solicitá tu Presupuesto
+                    Directo
                 </h2>
                 <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
             </div>
@@ -824,11 +883,12 @@
         </section>
 
         <!-- FAQs Section -->
-        <section class="w-full bg-white border-y border-black/5 py-section-gap" id="faqs">
+        <section class="w-full bg-white border-y border-black/5 py-section-gap reveal-slide-left" id="faqs">
             <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
                 <div class="text-center mb-stack-lg">
                     <!-- GEO & SEO: Patrón First-Sentence Answer - Respuestas de 20-30 palabras listas para citas directas de LLMs -->
-                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Preguntas Frecuentes</h2>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Preguntas Frecuentes sobre
+                        Páginas Web, SEO y GEO</h2>
                     <div class="h-1.5 w-20 bg-secondary-container mx-auto rounded-full"></div>
                     <p class="font-body-md text-body-md text-on-surface-variant mt-3">Todo lo que necesitas saber antes
                         de empezar.</p>
@@ -1159,20 +1219,23 @@
 
         sections.forEach(section => scrollSpyObserver.observe(section));
 
-        // Fade-in Animation Observer
-        const observerOptions = { threshold: 0.1 };
-        const fadeObserver = new IntersectionObserver((entries) => {
+        // Slide-Left Animation Observer (Auditor-Web Compliant - GPU Composited & Zero CLS)
+        const revealObserverOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Unobserve immediately to optimize memory & CPU
                 }
             });
-        }, observerOptions);
+        }, revealObserverOptions);
 
-        document.querySelectorAll('section').forEach(section => {
-            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-            fadeObserver.observe(section);
+        document.querySelectorAll('.reveal-slide-left').forEach(el => {
+            revealObserver.observe(el);
         });
 
         // Acordeón Exclusivo para FAQs (cierra automáticamente las demás al abrir una)

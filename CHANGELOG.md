@@ -4,6 +4,32 @@ Registro cronológico de modificaciones, optimizaciones y refactorizaciones real
 
 ---
 
+## [2026-08-26] — Animaciones Slide-Left GPU (Auditor Web), Optimizaciones AEO/SEO Local y Grafo JSON-LD GEO
+
+### 🚀 Animaciones & Rendimiento (Auditor Web Guidance)
+- **Animaciones Slide de Izquierda a Derecha (`.reveal-slide-left`)**:
+  - Implementación de animación acelerada por GPU utilizando `transform: translate3d(-36px, 0, 0)` -> `translate3d(0, 0, 0)` y `opacity: 0` -> `1` con `will-change: transform, opacity;`.
+  - Cero saltos de diseño (CLS = 0) al evitar recálculos de diseño (*reflows* o *repaints*).
+  - Aplicación en todas las secciones principales (`#inicio`, `#servicios`, `#precios`, Banner Marquee, `#nosotros`, `#proceso`, `#contacto`, `#faqs`) y secuencias escalonadas (`reveal-delay-100` a `reveal-delay-400`).
+- **Soporte de Accesibilidad (`prefers-reduced-motion`)**:
+  - Regla `@media (prefers-reduced-motion: reduce)` en `css/input.css` para anular animaciones en sistemas operativos con preferencia de movimiento reducido.
+- **IntersectionObserver Nativo (0kb Overheads)**:
+  - Reemplazo de scripts pesados por un `IntersectionObserver` nativo ligero con des-observación inmediata (`observer.unobserve(entry.target)`) tras activarse la animación para cero consumo de CPU.
+
+### 🧠 Refinamiento Estratégico AEO (Local SEO & Entity Definition)
+- **Titular Principal `<h1>` Transaccional**:
+  - Actualización del H1 a `Desarrollo Web y Posicionamiento SEO & GEO en Tucumán | Digital Syntropy`, posicionando palabras clave locales de alta conversión sin modificar las clases CSS existentes.
+- **Bloque de Extracción de Entidad AEO**:
+  - Inserción de un bloque declarativo `<blockquote>` inmediatamente debajo del `<h1>` que define la entidad comercial en San Miguel de Tucumán optimizado para citas directas en motores IA (ChatGPT, Perplexity, Gemini).
+- **Coherencia Semántica en Encabezados `<h2>`**:
+  - Ajuste semántico de todos los `<h2>` del sitio (`Servicios de Desarrollo Web & Posicionamiento`, `Planes y Precios de Páginas Web`, `¿Por qué elegir a Digital Syntropy?`, `Proceso de Desarrollo Web en 4 Pasos`, `Solicitá tu Presupuesto Directo`, `Preguntas Frecuentes sobre Páginas Web, SEO y GEO`).
+
+### 🌐 Inyección Técnica GEO & Schema.org JSON-LD
+- **Esquema Unificado `@graph` en el `<head>`**:
+  - Integración de los tipos `LocalBusiness` / `ProfessionalService` (con NAP completo, geolocalización de Tucumán, coordenadas GPS, áreas atendidas y lista de servicios), `WebSite` y `FAQPage` manteniendo correspondencia 1:1 con el cuerpo HTML.
+
+---
+
 ## [2026-08-20] — Rediseño Hero Ambient Blur, Tarjetas de Servicios Pastel y Acordeón de Precios
 
 ### 🎨 UI & Layout
