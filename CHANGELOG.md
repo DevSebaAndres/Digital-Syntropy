@@ -4,6 +4,44 @@ Registro cronológico de modificaciones, optimizaciones y refactorizaciones real
 
 ---
 
+## [2026-08-29] — Optimización WPO, Accesibilidad WCAG y Navegación Agéntica (llms.txt)
+
+### 🚀 Rendimiento Web (Core Web Vitals — Auditoría Lighthouse)
+
+- **Eliminación de recursos bloqueantes de renderizado (FCP)**:
+  - Añadidos `<link rel="preconnect">` para `fonts.googleapis.com` y `fonts.gstatic.com` para reducir la latencia DNS+TCP+TLS.
+  - **Inter** (fuente crítica del cuerpo): mantiene carga síncrona con `display=swap` para el renderizado inmediato del texto principal.
+  - **Cinzel** y **Material Symbols** (fuentes no críticas): migradas a carga asíncrona mediante patrón `rel="preload" as="style" + onload="this.rel='stylesheet'"` con fallback `<noscript>`, eliminando su impacto en el FCP.
+
+- **Corrección de Cumulative Layout Shift / CLS (imágenes)**:
+  - Añadidos atributos `width` y `height` explícitos en **todas** las ilustraciones SVG del sitio para que el navegador reserve el espacio correcto antes de que los archivos terminen de cargar:
+    - `undraw_data-at-work_3tbf.svg` (hero): `500×400`
+    - `Digital transformation-amico.svg`: `300×224`
+    - `Design team-bro.svg`: `300×224`
+    - `Performance overview-rafiki.svg`: `300×224`
+    - `Team goals-rafiki.svg`: `360×330`
+    - `undraw_chatting_29rn.svg`: `210×192`
+  - Añadidos `width` y `height` al `<img>` del logotipo en navbar (`96×40`) y footer (`96×48`).
+
+- **Entrega responsiva del logotipo (LCP)**:
+  - Implementado atributo `srcset` con descriptor `400w` y `sizes="(max-width: 768px) 73px, 96px"` en ambas instancias del `<picture>` del logo (navbar y footer).
+  - El navegador descarga ahora únicamente la versión necesaria según el viewport, evitando la descarga innecesaria de 173 KiB en dispositivos móviles donde el logo se renderiza a 73×40 px.
+
+### ♿ Accesibilidad (WCAG AA — Contraste)
+
+- **Corrección de ratio de contraste en botones CTA del Hero (`#inicio`)**:
+  - Botón **"Ver Planes & Precios"** (`bg-secondary-container`): reemplazado `text-white` por `color: #0D0D0D` para superar el ratio mínimo de 4.5:1 sobre fondo claro.
+  - Botón **"Consultar por WhatsApp"** (`bg-primary`): reemplazado `text-on-primary` por `color: #0D0D0D` para cumplir la normativa de contraste sobre el color primario de la marca.
+
+### 🤖 Navegación Agéntica (AI Crawlers)
+
+- **Creación de `llms.txt` en la raíz del proyecto**:
+  - Archivo Markdown siguiendo la especificación `llms.txt` (análogo a `robots.txt` pero dirigido a crawlers de LLMs como ChatGPT, Perplexity y Gemini).
+  - Contiene: encabezado `# Digital Syntropy`, descripción de la agencia, enlaces directos a todas las secciones del sitio (`#servicios`, `#precios`, `#contacto`, `#faqs`), planes y precios, datos de contacto, información de entidad (`LocalBusiness`) e información geográfica.
+  - Codificado en UTF-8 con acentos correctos.
+
+---
+
 ## [2026-08-26] — Animaciones Slide-Left GPU (Auditor Web), Optimizaciones AEO/SEO Local y Grafo JSON-LD GEO
 
 ### 🚀 Animaciones & Rendimiento (Auditor Web Guidance)
