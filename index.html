@@ -13,23 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Performance (FCP): Inter es la fuente crítica del body — carga síncrona con display=swap -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    <!-- Performance (FCP): Inter — solo pesos 400 y 700 indispensables, display=swap para no bloquear render -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
         rel="stylesheet" />
 
     <!-- Performance: CSS principal compilado (Tailwind) -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Performance (FCP): Cinzel y Material Symbols son no-críticos — carga asíncrona para eliminar render-blocking -->
-    <link rel="preload" as="style"
+    <!-- Performance (FCP): Cinzel — decorativa no-crítica, carga diferida post-render con media trick -->
+    <link rel="stylesheet" media="print"
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
-        onload="this.onload=null;this.rel='stylesheet'" />
+        onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"></noscript>
 
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"></noscript>
+    <!-- Performance (FCP): Material Symbols — subset exacto de iconos usados, carga diferida -->
+    <link rel="stylesheet" media="print"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&icon_names=arrow_forward,auto_awesome,bar_chart,chat,expand_more,insights,menu,query_stats,send,verified&display=block"
+        onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&icon_names=arrow_forward,auto_awesome,bar_chart,chat,expand_more,insights,menu,query_stats,send,verified&display=block"></noscript>
     <!-- SEO: Metaetiquetas & Canónica - Indexación y prevención de contenido duplicado -->
     <meta name="description"
         content="Digital Syntropy - Transformamos tu presencia digital en ventas reales. Landing pages, marketing digital y analítica ROI.">
@@ -166,14 +167,14 @@
         <div class="flex justify-between items-center px-4 sm:px-8 lg:px-12 py-3 max-w-[1400px] mx-auto">
             <a href="#inicio" class="flex items-center gap-3 shrink-0" aria-label="Digital Syntropy Inicio">
                 <picture class="h-10 md:h-12 w-auto flex items-center">
-                    <!-- Performance (LCP): srcset responsivo para evitar descarga de 173KiB en móviles -->
+                    <!-- Performance (LCP): logo optimizado 250px/500px (5.5 KiB / 15 KiB) vs original 173 KiB -->
                     <source
-                        srcset="assets/img/digital_syntropy_logo.webp 400w"
+                        srcset="assets/img/digital_syntropy_logo_web.webp 250w, assets/img/digital_syntropy_logo_web_2x.webp 500w"
                         sizes="(max-width: 768px) 73px, 96px"
                         type="image/webp">
-                    <img src="assets/img/digital_syntropy_logo.png" alt="Digital Syntropy Logo"
+                    <img src="assets/img/digital_syntropy_logo_web.webp" alt="Digital Syntropy Logo"
                         class="h-10 md:h-12 w-auto object-contain"
-                        width="96" height="40" />
+                        width="96" height="52" decoding="async" />
                 </picture>
                 <span class="font-headline-md text-xl md:text-2xl font-bold text-white whitespace-nowrap">
                     Digital <span class="text-secondary-container">Syntropy</span>
@@ -1143,13 +1144,14 @@
             <div class="text-center md:text-left">
                 <div class="mb-4 flex items-center justify-center md:justify-start gap-3">
                     <picture class="h-12 md:h-14 w-auto flex items-center">
+                        <!-- Performance: logo optimizado reutilizado desde navbar -->
                         <source
-                            srcset="assets/img/digital_syntropy_logo.webp 400w"
+                            srcset="assets/img/digital_syntropy_logo_web.webp 250w, assets/img/digital_syntropy_logo_web_2x.webp 500w"
                             sizes="(max-width: 768px) 73px, 96px"
                             type="image/webp">
-                        <img src="assets/img/digital_syntropy_logo.png" alt="Digital Syntropy Logo"
+                        <img src="assets/img/digital_syntropy_logo_web.webp" alt="Digital Syntropy Logo"
                             class="h-12 md:h-14 w-auto object-contain"
-                            width="96" height="48" />
+                            width="96" height="52" loading="lazy" decoding="async" />
                     </picture>
                     <span class="font-headline-md text-xl md:text-2xl font-bold text-white">
                         Digital <span class="text-secondary-container">Syntropy</span>
