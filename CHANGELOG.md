@@ -2,6 +2,21 @@
 
 Registro cronológico de modificaciones, optimizaciones y refactorizaciones realizadas en el proyecto.
 
+
+---
+
+## [2026-09-05] — Carga Completa de Material Symbols y Gestión Centralizada de Etiquetas (GTM)
+
+### 🎨 Recursos & Tipografía (Material Symbols)
+- **Carga de librería completa de Material Symbols**:
+  - Se removió el parámetro de restricción `&icon_names=...` en el enlace de Google Fonts (`index.html`) para permitir la carga completa de la familia `Material Symbols Outlined`.
+  - Se mantuvo la carga diferida con `media="print"` + `onload="this.media='all'"` y `display=block` para garantizar que todos los iconos presentes y futuros (como `check_circle`) se rendericen correctamente sin degradarse a texto plano.
+
+### 📊 Analítica & Tag Management (Meta Pixel / GTM)
+- **Remoción de script hardcoded de Meta Pixel**:
+  - Se eliminó el snippet directo del Meta Pixel del `<head>` de `index.html`.
+  - Se centralizó la administración de las etiquetas de marketing y analítica (Meta Pixel, Google Analytics, etc.) a través del contenedor existente de **Google Tag Manager (GTM)** para un manejo más eficiente y limpio del código.
+
 ---
 
 ## [2026-08-29] — Optimización WPO, Accesibilidad WCAG y Navegación Agéntica (llms.txt)
