@@ -194,20 +194,25 @@
     <!-- Sticky Header (Navbar Negro Sólido Elegante) -->
     <nav class="fixed w-full top-0 z-50 navbar-dark backdrop-blur-lg shadow-2xl">
         <div class="flex justify-between items-center px-4 sm:px-8 lg:px-12 py-3 max-w-[1400px] mx-auto">
-            <a href="#inicio" class="flex items-center gap-3 shrink-0" aria-label="Digital Syntropy Inicio">
-                <picture class="h-10 md:h-12 w-auto flex items-center">
-                    <!-- Performance (LCP): logo optimizado 250px/500px (5.5 KiB / 15 KiB) vs original 173 KiB -->
-                    <source
-                        srcset="assets/img/digital_syntropy_logo_web.webp 250w, assets/img/digital_syntropy_logo_web_2x.webp 500w"
-                        sizes="(max-width: 768px) 73px, 96px" type="image/webp">
-                    <img src="assets/img/digital_syntropy_logo_web.webp" alt="Digital Syntropy Logo"
-                        class="h-10 md:h-12 w-auto object-contain" width="96" height="52" decoding="async" />
-                </picture>
-                <span class="font-headline-md text-xl md:text-2xl font-bold text-white whitespace-nowrap">
-                    Digital <span class="text-secondary-container">Syntropy</span>
-                </span>
-            </a>
-            <div class="hidden md:flex gap-3 lg:gap-6 items-center shrink-0">
+            <!-- Logo Area (Left) -->
+            <div class="flex shrink-0">
+                <a href="#inicio" class="flex items-center gap-3" aria-label="Digital Syntropy Inicio">
+                    <picture class="h-10 md:h-12 w-auto flex items-center">
+                        <!-- Performance (LCP): logo optimizado 250px/500px (5.5 KiB / 15 KiB) vs original 173 KiB -->
+                        <source
+                            srcset="assets/img/digital_syntropy_logo_web.webp 250w, assets/img/digital_syntropy_logo_web_2x.webp 500w"
+                            sizes="(max-width: 768px) 73px, 96px" type="image/webp">
+                        <img src="assets/img/digital_syntropy_logo_web.webp" alt="Digital Syntropy Logo"
+                            class="h-10 md:h-12 w-auto object-contain" width="96" height="52" decoding="async" />
+                    </picture>
+                    <span class="font-headline-md text-xl md:text-2xl font-bold text-white whitespace-nowrap">
+                        Digital <span class="text-secondary-container">Syntropy</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Navigation Links (Centered) -->
+            <div class="hidden md:flex gap-3 lg:gap-6 items-center justify-center">
                 <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
                     href="#inicio">Inicio</a>
                 <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
@@ -215,22 +220,34 @@
                 <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
                     href="#precios">Precios</a>
                 <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#portfolio">Portfolio</a>
+                <!-- <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
+                    href="#portfolio">Testimonios</a> -->
+                <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
                     href="#nosotros">Nosotros</a>
                 <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
                     href="#contacto">Contacto</a>
                 <a class="font-body-md text-sm lg:text-base text-white hover:text-secondary-container transition-colors whitespace-nowrap"
                     href="#faqs">FAQs</a>
-                <a class="bg-primary text-on-primary px-5 py-2.5 rounded-full font-bold text-sm lg:text-base transition-all scale-100 hover:scale-105 active:scale-95 flex items-center gap-2 shadow-lg whitespace-nowrap shrink-0"
+            </div>
+
+            <!-- CTA Button (Right) -->
+            <div class="hidden md:flex shrink-0">
+                <a class="bg-primary text-on-primary px-5 py-2.5 rounded-full font-bold text-sm lg:text-base transition-all scale-100 hover:scale-105 active:scale-95 flex items-center gap-2 shadow-lg whitespace-nowrap"
                     href="https://wa.me/5493815125571?text=Hola%20Digital%20Syntropy,%20quisiera%20consultar%20por%20sus%20servicios%20de%20desarrollo%20web%20y%20posicionamiento."
                     target="_blank" rel="noopener noreferrer">
                     <span class="material-symbols-outlined text-[18px]">chat</span>
                     Contactar WhatsApp
                 </a>
             </div>
-            <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Abrir menú"
-                aria-expanded="false" aria-controls="mobile-menu">
-                <span id="mobile-menu-icon" class="material-symbols-outlined text-2xl">menu</span>
-            </button>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden shrink-0">
+                <button id="mobile-menu-btn" class="text-white p-2 focus:outline-none" aria-label="Abrir menú"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    <span id="mobile-menu-icon" class="material-symbols-outlined text-2xl">menu</span>
+                </button>
+            </div>
         </div>
 
         <!-- Mobile Navigation Menu Dropdown -->
@@ -242,6 +259,8 @@
                 href="#servicios">Servicios</a>
             <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
                 href="#precios">Precios</a>
+            <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
+                href="#portfolio">Portfolio</a>
             <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
                 href="#nosotros">Nosotros</a>
             <a class="font-body-md text-base text-white hover:text-secondary-container transition-colors py-1 border-b border-white/5"
